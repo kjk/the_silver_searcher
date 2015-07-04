@@ -1,9 +1,26 @@
--- to generate Visual Studio files in vs-premake directory, run:
--- premake4 vs2010 or premake4 vs2008
+--
+-- to generate Visual Studio files in `build` directory, run:
+--      premake5 vs2010 or premake5 vs2008
+--
+-- to Make files in `build` directory, run:
+--      premake5 gmake
+--
+-- to change `build` directory, run:
+--      premake5 /to=vs2010 vs2010
+-- or:
+--      premake5 --to=vs2010 vs2010
+--
+
+newoption {
+    trigger     = 'to',
+    value       = 'path',
+    description = 'Set the output location for the generated files'
+}
 
 solution 'ag'
+    location (_OPTIONS['to'] or 'build')
+
     configurations { 'Debug', 'Release', 'ReleaseKjk' }
-    location 'vs-premake5' -- this is where generated solution/project files go
     flags { 'StaticRuntime', 'NoRTTI', 'Unicode', 'NoExceptions', }
     defines {
         -- windows
@@ -48,7 +65,7 @@ project 'ag'
     includedirs {
         'src',
         'wincompat',
-        'wincompat/pcre',
+        'wincompat/pcre', -- position must be back of 'wincompat', because it has config.h
         'wincompat/pthread',
         'wincompat/zlib',
     }
@@ -79,6 +96,10 @@ project 'dependlib'
     kind 'StaticLib'
     language 'C'
 
+    -- add configmap for solution.
+    configmap {
+        ['ReleaseKjk'] = 'Release',
+    }
     includedirs {
         'wincompat/pcre',
         'wincompat/pthread',
@@ -98,3 +119,4 @@ project 'dependlib'
             'wincompat/pch.h',
             'wincompat/pch.c',
         }
+
