@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup>
+		<Filter Include="wincompat">
+			<UniqueIdentifier>{6644BBE5-6F9E-8F49-8E80-16CB473A9DF9}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="wincompat\pcre">
+			<UniqueIdentifier>{6A700AC8-55CF-5641-8DF8-5E924653854A}</UniqueIdentifier>
+		</Filter>
+	</ItemGroup>
+	<ItemGroup>
+		<ClCompile Include="..\wincompat\pcre\pcre_byte_order.c">
+			<Filter>wincompat\pcre</Filter>
+		</ClCompile>
+		<ClCompile Include="..\wincompat\pcre\pcre_chartables.c">
+			<Filter>wincompat\pcre</Filter>
+		</ClCompile>
+		<ClCompile Include="..\wincompat\pcre\pcre_compile.c">
+			<Filter>wincompat\pcre</Filter>
+		</ClCompile>
+		<ClCompile Include="..\wincompat\pcre\pcre_config.c">
+			<Filter>wincompat\pcre</Filter>
+		</ClCompile>
+		<ClCompile Include="..\wincompat\pcre\pcre_dfa_exec.c">
+			<Filter>wincompat\pcre</Filter>
+		</ClCompile>
+		<ClCompile Include="..\wincompat\pcre\pcre_exec.c">
+			<Filter>wincompat\pcre</Filter>
+		</ClCompile>
+		<ClCompile Include="..\wincompat\pcre\pcre_fullinfo.c">
+			<Filter>wincompat\pcre</Filter>
+		</ClCompile>
+		<ClCompile Include="..\wincompat\pcre\pcre_get.c">
+			<Filter>wincompat\pcre</Filter>
+		</ClCompile>
+		<ClCompile Include="..\wincompat\pcre\pcre_globals.c">
+			<Filter>wincompat\pcre</Filter>
+		</ClCompile>
+		<ClCompile Include="..\wincompat\pcre\pcre_jit_compile.c">
+			<Filter>wincompat\pcre</Filter>
+		</ClCompile>
+		<ClCompile Include="..\wincompat\pcre\pcre_maketables.c">
+			<Filter>wincompat\pcre</Filter>
+		</ClCompile>
+		<ClCompile Include="..\wincompat\pcre\pcre_newline.c">
+			<Filter>wincompat\pcre</Filter>
+		</ClCompile>
+		<ClCompile Include="..\wincompat\pcre\pcre_ord2utf8.c">
+			<Filter>wincompat\pcre</Filter>
+		</ClCompile>
+		<ClCompile Include="..\wincompat\pcre\pcre_refcount.c">
+			<Filter>wincompat\pcre</Filter>
+		</ClCompile>
+		<ClCompile Include="..\wincompat\pcre\pcre_string_utils.c">
+			<Filter>wincompat\pcre</Filter>
+		</ClCompile>
+		<ClCompile Include="..\wincompat\pcre\pcre_study.c">
+			<Filter>wincompat\pcre</Filter>
+		</ClCompile>
+		<ClCompile Include="..\wincompat\pcre\pcre_tables.c">
+			<Filter>wincompat\pcre</Filter>
+		</ClCompile>
+		<ClCompile Include="..\wincompat\pcre\pcre_ucd.c">
+			<Filter>wincompat\pcre</Filter>
+		</ClCompile>
+		<ClCompile Include="..\wincompat\pcre\pcre_valid_utf8.c">
+			<Filter>wincompat\pcre</Filter>
+		</ClCompile>
+		<ClCompile Include="..\wincompat\pcre\pcre_version.c">
+			<Filter>wincompat\pcre</Filter>
+		</ClCompile>
+		<ClCompile Include="..\wincompat\pcre\pcre_xclass.c">
+			<Filter>wincompat\pcre</Filter>
+		</ClCompile>
+	</ItemGroup>
+</Project>

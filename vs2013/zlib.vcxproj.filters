@@ -2,10 +2,10 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 	<ItemGroup>
 		<Filter Include="wincompat">
-			<UniqueIdentifier>{8C496466-8427-F84E-B17A-B9A9E9AE146C}</UniqueIdentifier>
+			<UniqueIdentifier>{64822791-BE64-1146-B283-7A6305A1C80F}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="wincompat\zlib">
-			<UniqueIdentifier>{AE6B6F95-23CC-2B47-B70E-6B593486ECF7}</UniqueIdentifier>
+			<UniqueIdentifier>{0683F43C-985F-3F43-B8F5-1A05D99560AA}</UniqueIdentifier>
 		</Filter>
 	</ItemGroup>
 	<ItemGroup>
@@ -13,9 +13,6 @@
 			<Filter>wincompat\zlib</Filter>
 		</ClInclude>
 		<ClInclude Include="..\wincompat\zlib\deflate.h">
-			<Filter>wincompat\zlib</Filter>
-		</ClInclude>
-		<ClInclude Include="..\wincompat\zlib\gzguts.h">
 			<Filter>wincompat\zlib</Filter>
 		</ClInclude>
 		<ClInclude Include="..\wincompat\zlib\inffast.h">

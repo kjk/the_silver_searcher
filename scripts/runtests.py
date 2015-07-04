@@ -375,7 +375,7 @@ def run_tests():
 	ag_cmd = ag_exe_path()
 	if not os.path.exists(ag_cmd):
 		fatal("Didn't find ag executable. Expected: '%s'" % ag_cmd)
-	test_files = [os.path.join("tests", f) for f in os.listdir("tests")]
+	test_files = [os.path.join("testskjk", f) for f in os.listdir("testskjk")]
 	map(run_tests_in_file, test_files)
 	# if everything went ok, delete the temporary tests directory
 	delete_ag_tests_dir()

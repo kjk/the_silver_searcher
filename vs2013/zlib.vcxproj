@@ -15,8 +15,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{F9D0F471-B5DE-584B-A15D-7BDA985A92AD}</ProjectGuid>
-    <RootNamespace>pthread-win32</RootNamespace>
+    <ProjectGuid>{6A4DCE3D-DE29-F343-BB09-6106BF4F2695}</ProjectGuid>
+    <RootNamespace>zlib</RootNamespace>
     <Keyword>Win32Proj</Keyword>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -56,21 +56,21 @@
   <PropertyGroup>
     <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\dbg\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">obj\Debug\pthread-win32\</IntDir>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">pthread-win32</TargetName>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">obj\Debug\zlib\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">zlib</TargetName>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\rel\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">obj\Release\pthread-win32\</IntDir>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">pthread-win32</TargetName>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">obj\Release\zlib\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">zlib</TargetName>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='ReleaseKjk|Win32'">..\rel\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='ReleaseKjk|Win32'">obj\ReleaseKjk\pthread-win32\</IntDir>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='ReleaseKjk|Win32'">pthread-win32</TargetName>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='ReleaseKjk|Win32'">obj\ReleaseKjk\zlib\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='ReleaseKjk|Win32'">zlib</TargetName>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <AdditionalOptions>/wd4800 /wd4127 /wd4100 /wd4244 %(AdditionalOptions)</AdditionalOptions>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>..\wincompat\pthread-win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>_DEBUG;DEBUG;_WIN32;WIN32;WINDOWS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\wincompat\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;DEBUG;_WIN32;WIN32;WINDOWS;_CRT_SECURE_NO_WARNINGS;Z_SOLO;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>false</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
@@ -84,24 +84,24 @@
       <CompileAs>CompileAsC</CompileAs>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>_DEBUG;DEBUG;_WIN32;WIN32;WINDOWS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\wincompat\pthread-win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;DEBUG;_WIN32;WIN32;WINDOWS;_CRT_SECURE_NO_WARNINGS;Z_SOLO;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\wincompat\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Lib>
-      <OutputFile>$(OutDir)pthread-win32.lib</OutputFile>
+      <OutputFile>$(OutDir)zlib.lib</OutputFile>
     </Lib>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <ProgramDataBaseFileName>$(OutDir)pthread-win32.pdb</ProgramDataBaseFileName>
+      <ProgramDataBaseFileName>$(OutDir)zlib.pdb</ProgramDataBaseFileName>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
       <AdditionalOptions>/wd4800 /wd4127 /wd4100 /wd4244 %(AdditionalOptions)</AdditionalOptions>
       <Optimization>Full</Optimization>
-      <AdditionalIncludeDirectories>..\wincompat\pthread-win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>NDEBUG;_WIN32;WIN32;WINDOWS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\wincompat\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;_WIN32;WIN32;WINDOWS;_CRT_SECURE_NO_WARNINGS;Z_SOLO;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>false</MinimalRebuild>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
@@ -115,26 +115,26 @@
       <CompileAs>CompileAsC</CompileAs>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>NDEBUG;_WIN32;WIN32;WINDOWS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\wincompat\pthread-win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;_WIN32;WIN32;WINDOWS;_CRT_SECURE_NO_WARNINGS;Z_SOLO;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\wincompat\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Lib>
-      <OutputFile>$(OutDir)pthread-win32.lib</OutputFile>
+      <OutputFile>$(OutDir)zlib.lib</OutputFile>
     </Lib>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <OptimizeReferences>true</OptimizeReferences>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
-      <ProgramDataBaseFileName>$(OutDir)pthread-win32.pdb</ProgramDataBaseFileName>
+      <ProgramDataBaseFileName>$(OutDir)zlib.pdb</ProgramDataBaseFileName>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseKjk|Win32'">
     <ClCompile>
       <AdditionalOptions>/wd4800 /wd4127 /wd4100 /wd4244 %(AdditionalOptions)</AdditionalOptions>
       <Optimization>Full</Optimization>
-      <AdditionalIncludeDirectories>..\wincompat\pthread-win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>NDEBUG;KJK_BUILD;_WIN32;WIN32;WINDOWS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\wincompat\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;KJK_BUILD;_WIN32;WIN32;WINDOWS;_CRT_SECURE_NO_WARNINGS;Z_SOLO;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>false</MinimalRebuild>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
@@ -148,31 +148,54 @@
       <CompileAs>CompileAsC</CompileAs>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>NDEBUG;KJK_BUILD;_WIN32;WIN32;WINDOWS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\wincompat\pthread-win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;KJK_BUILD;_WIN32;WIN32;WINDOWS;_CRT_SECURE_NO_WARNINGS;Z_SOLO;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\wincompat\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Lib>
-      <OutputFile>$(OutDir)pthread-win32.lib</OutputFile>
+      <OutputFile>$(OutDir)zlib.lib</OutputFile>
     </Lib>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <OptimizeReferences>true</OptimizeReferences>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
-      <ProgramDataBaseFileName>$(OutDir)pthread-win32.pdb</ProgramDataBaseFileName>
+      <ProgramDataBaseFileName>$(OutDir)zlib.pdb</ProgramDataBaseFileName>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\wincompat\pthread-win32\config.h" />
-    <ClInclude Include="..\wincompat\pthread-win32\context.h" />
-    <ClInclude Include="..\wincompat\pthread-win32\implement.h" />
-    <ClInclude Include="..\wincompat\pthread-win32\need_errno.h" />
-    <ClInclude Include="..\wincompat\pthread-win32\pthread.h" />
-    <ClInclude Include="..\wincompat\pthread-win32\sched.h" />
-    <ClInclude Include="..\wincompat\pthread-win32\semaphore.h" />
+    <ClInclude Include="..\wincompat\zlib\crc32.h" />
+    <ClInclude Include="..\wincompat\zlib\deflate.h" />
+    <ClInclude Include="..\wincompat\zlib\inffast.h" />
+    <ClInclude Include="..\wincompat\zlib\inffixed.h" />
+    <ClInclude Include="..\wincompat\zlib\inflate.h" />
+    <ClInclude Include="..\wincompat\zlib\inftrees.h" />
+    <ClInclude Include="..\wincompat\zlib\trees.h" />
+    <ClInclude Include="..\wincompat\zlib\zconf.h" />
+    <ClInclude Include="..\wincompat\zlib\zlib.h" />
+    <ClInclude Include="..\wincompat\zlib\zutil.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\wincompat\pthread-win32\pthread.c">
+    <ClCompile Include="..\wincompat\zlib\adler32.c">
+    </ClCompile>
+    <ClCompile Include="..\wincompat\zlib\compress.c">
+    </ClCompile>
+    <ClCompile Include="..\wincompat\zlib\crc32.c">
+    </ClCompile>
+    <ClCompile Include="..\wincompat\zlib\deflate.c">
+    </ClCompile>
+    <ClCompile Include="..\wincompat\zlib\infback.c">
+    </ClCompile>
+    <ClCompile Include="..\wincompat\zlib\inffast.c">
+    </ClCompile>
+    <ClCompile Include="..\wincompat\zlib\inflate.c">
+    </ClCompile>
+    <ClCompile Include="..\wincompat\zlib\inftrees.c">
+    </ClCompile>
+    <ClCompile Include="..\wincompat\zlib\trees.c">
+    </ClCompile>
+    <ClCompile Include="..\wincompat\zlib\uncompr.c">
+    </ClCompile>
+    <ClCompile Include="..\wincompat\zlib\zutil.c">
     </ClCompile>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

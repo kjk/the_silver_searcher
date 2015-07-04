@@ -2,10 +2,10 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 	<ItemGroup>
 		<Filter Include="src">
-			<UniqueIdentifier>{FDA3073D-C440-F94E-A81D-778DEC3EDB27}</UniqueIdentifier>
+			<UniqueIdentifier>{01270C5B-DA4A-C54E-B68B-6D9B60E53D82}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="wincompat">
-			<UniqueIdentifier>{110A056C-14BC-794F-A3F1-9DB99CD4A4C0}</UniqueIdentifier>
+			<UniqueIdentifier>{6127D2AE-3534-B94D-9E29-8E08E5B462E0}</UniqueIdentifier>
 		</Filter>
 	</ItemGroup>
 	<ItemGroup>

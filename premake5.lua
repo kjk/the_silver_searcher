@@ -3,7 +3,7 @@
 
 solution 'ag'
     configurations { 'Debug', 'Release', 'ReleaseKjk' }
-    location 'build' -- this is where generated solution/project files go
+    location 'vs-premake5' -- this is where generated solution/project files go
     flags { 'StaticRuntime', 'NoRTTI', 'Unicode', 'NoExceptions', }
     defines {
         -- windows
@@ -98,4 +98,3 @@ project 'dependlib'
             'wincompat/pch.h',
             'wincompat/pch.c',
         }
-
