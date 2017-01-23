@@ -119,3 +119,4 @@ project 'dependlib'
             'wincompat/pch.h',
             'wincompat/pch.c',
         }
+
